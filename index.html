@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google maps demo</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="main">
+        <div id="side-div">
+            <h3>Google maps</h3>
+            <p>
+                Using this application you can search for nearby places (close to you location) that
+                satisfy your criteria
+            </p>
+            <hr>
+            <p>Enter criteria for search:</p>
+            <input type="text" id="criteria" value="sushi"/>
+            <input type="button" id="button-search" value="Search" />
+        </div>
+        <div id="map-container">
+
+        </div>
+        <div id="panel">
+            
+        </div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANMs_8TvQ8rZ68cZakljo4-KIiIKvR3yc&libraries=places&callback=initMap"></script>
+    <script>
+        
+        const buttonSearch = document.getElementById("button-search");
+        buttonSearch.addEventListener('click', () => {
+            console.log("Init map called...");
+            initMap();
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100%;
+    background-color: grey;
+    display: flex;
+}
+
+#side-div {
+    height: 100%;
+    width: 25%;
+    background-color: cadetblue;
+    border-right: 2px solid rgb(66, 116, 117);
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#side-div h3 {
+    margin-top: 50px;
+}
+
+#map-container {
+    height: 100%;
+    width: 75%;
+    background-color: white;
+}
+
+#button-search {
+    margin-top: 12px;
+}
+
+#panel {
+    height: 100%;
+    width: 0px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: all .2s ease-out;
+}
+
+.open {
+    width: 250px !important;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    max-height: 166px;
+    display: block;
+}
+
+.place,
+p {
+    font-family: 'open sans', arial, sans-serif;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.details {
+    color: darkslategrey;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.panel-button {
+    width: 100%;
+}
+
+.panel-button:hover {
+    cursor: pointer;
+}
